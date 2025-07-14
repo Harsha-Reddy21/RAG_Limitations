@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+openai
+python-dotenv==1.0.0
+pandas
+sqlalchemy
+pydantic
+faker
