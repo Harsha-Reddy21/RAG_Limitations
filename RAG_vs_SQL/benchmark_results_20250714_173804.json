@@ -1,0 +1,25 @@
+[
+  {
+    "question": "How many orders does customer John Doe have?",
+    "sql_agent": {
+      "result": "Customer John Doe has 2 orders.",
+      "time": 22.22872495651245,
+      "success": true
+    },
+    "direct_sql": {
+      "result": [
+        {
+          "count": 2
+        }
+      ],
+      "sql_query": "SELECT COUNT(*) \nFROM orders \nJOIN customers ON orders.customer_id = customers.customer_id \nWHERE customers.name = 'John Doe';",
+      "time": 2.0060064792633057,
+      "success": true
+    },
+    "rag": {
+      "result": "The provided context does not contain information about a customer named John Doe.",
+      "time": 8.890246629714966,
+      "success": true
+    }
+  }
+]
